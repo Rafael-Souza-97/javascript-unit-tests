@@ -30,6 +30,12 @@ const productDetails = require('../src/productDetails');
 */
 
 describe('6 - Implemente os casos de teste para a função `productDetails`', () => {
+  it('Verifica se a função `productDetails` tem o comportamento esperado', () => {
+    expect(productDetails('JavaScript', 'Jest')).toEqual([
+      { name: 'JavaScript', details: { productId: 'JavaScript123' } },
+      { name: 'Jest', details: { productId: 'Jest123' } }
+    ]);
+  })
   it('Teste se productDetails é uma função', () => {
     expect(typeof productDetails).toBe('function');
   })
@@ -37,15 +43,17 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
   expect(Array.isArray(productDetails())).toBe(true);
   })
   it('Teste se o array retornado pela função contém dois itens dentro', () => {
-    expect((productDetails())).toEqual(expect.arrayContaining(2));
-    })
-
-
-  it('Verifica se a função `productDetails` tem o comportamento esperado', () => {
-
+    expect(productDetails('a', 'b').length).toBe(2);
   })
-    // .
-    // Teste se os dois itens dentro do array retornado pela função são objetos.
-    // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
-    // Teste se os dois productIds terminam com 123.
+  it('Teste se os dois itens dentro do array retornado pela função são objetos', () => {
+    expect(typeof productDetails('a', 'b')[0]).toBe('object');
+    expect(typeof productDetails('a', 'b')[1]).toBe('object');
+  })
+  it('Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si', () => {
+    expect(productDetails('a', 'b')[0] !== productDetails('a', 'b')[0]).toBe(true);
+  })
+  it('Teste se os dois productIds terminam com 123', () => {
+    expect(productDetails()[0].details.productId.slice(-3)).toEqual('123');
+    expect(productDetails()[1].details.productId.slice(-3)).toEqual('123');
+  })
 });
