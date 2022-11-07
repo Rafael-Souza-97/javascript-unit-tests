@@ -31,4 +31,4 @@ Nesse projeto, fui capaz de:
 
 ## Infos Adicionais
 
-- ###### Percentual de cumprimento de requisitos ([Trybe](https://www.betrybe.com/))- 88%
+- ###### Percentual de cumprimento de requisitos ([Trybe](https://www.betrybe.com/))- 90%
