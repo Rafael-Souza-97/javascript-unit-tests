@@ -21,13 +21,16 @@ Nesse projeto, fui capaz de:
 ## Tecnologias / Ferramentas utilizadas
 
 - [JavaScript](https://www.javascript.com/)
-- [Jest](https://jestjs.io/)
 - [Nodejs](https://nodejs.org/en/)
 - [Zoom](https://zoom.us/)
 - [Slack](https://slack.com/intl/pt-br/)
 - [VsCode](https://code.visualstudio.com/)
 - [Git](https://git-scm.com/) & [GitHub](https://github.com/)
 - [Linux - Ubuntu](https://ubuntu.com/)
+
+## Testes
+
+- [Jest](https://jestjs.io/)
 
 ## Infos Adicionais
 
