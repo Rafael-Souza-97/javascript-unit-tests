@@ -1,4 +1,4 @@
-# TrybeWarts
+# Javascript Unit Tests
 
 Aplicação realizada enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos de testes unitários em 
 [JavaScript](https://www.javascript.com/) utilizando o framework [Jest](https://jestjs.io/). No trabalho foi implementado várias funções na resolução dos 
